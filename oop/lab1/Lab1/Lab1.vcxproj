@@ -143,12 +143,12 @@
   <ItemGroup>
     <ClCompile Include="Stack.cpp" />
     <ClCompile Include="Main.cpp" />
-    <ClCompile Include="StackInterface.cpp" />
+    <ClCompile Include="StackUserInterface.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MyExceptions.h" />
     <ClInclude Include="Stack.h" />
-    <ClInclude Include="StackInterface.h" />
+    <ClInclude Include="StackUserInterface.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

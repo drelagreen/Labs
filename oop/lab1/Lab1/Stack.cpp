@@ -1,13 +1,16 @@
 #include "Stack.h"
-#include <iostream>
 #include "MyExceptions.h"
+#include <string.h>
 	Stack::Stack(int size) {
 		_stackArray = new int[size];
 		_maxSize = size;
-		_size = 0;
+	}
+	
+	Stack::~Stack() {
+		delete(_stackArray);
 	}
 
-	bool Stack::isEmpty() const {
+	bool Stack::isEmpty(){
 		return (_size == 0);
 	}
 
@@ -38,10 +41,8 @@
 		}
 	}
 
-    int Stack::getMaxSize() const{
+    int Stack::getMaxSize() {
         return _maxSize;
 	}
 
-    Stack::~Stack() {
-		delete(_stackArray);
-	}
+  

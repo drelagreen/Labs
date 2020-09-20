@@ -1,19 +1,20 @@
 ﻿#include "Stack.h"
 #include <iostream>
 #include "MyExceptions.h"
-#include "StackInterface.h"
-    int StackInterface::getNextInt() {
+#include "StackUserInterface.h"
+    
+    int StackUserInterface::getNextInt() {
         int t;
         std::cout << "Введите значение, помещаемое в стэк> ";
         std::cin >> t;
         return t;
     }
 
-    void StackInterface::printExceptionMessage(std::exception &e) {
+    void StackUserInterface::printExceptionMessage(std::exception &e) {
         std::cout << "Поймано исключение [" << e.what() << "]" << std::endl;
     }
 
-    int StackInterface::getStackSize() {
+    int StackUserInterface::getStackSize() {
         int n;
         std::cout << "Введите размер стэка> ";
         std::cin >> n;
@@ -24,9 +25,8 @@
         return n;
     }
 
-    Stack* stack;
-    void StackInterface::start() {
-        stack = new Stack(getStackSize());
+    void StackUserInterface::start() {
+        _stack = new Stack(getStackSize());
         bool running = true;
         int choice;
         while (running) {
@@ -35,16 +35,16 @@
             try {
                 switch (choice) {
                     case 1:
-                        std::cout << stack->pop() << std::endl;
+                        std::cout << _stack->pop() << std::endl;
                         break;
                     case 2:
-                        stack->push(getNextInt());
+                        _stack->push(getNextInt());
                         break;
                     case 3:
-                        std::cout << stack->back() << std::endl;
+                        std::cout << _stack->back() << std::endl;
                         break;
                     case 4:
-                        std::cout << (stack->isEmpty() ? "true" : "false") << std::endl;
+                        std::cout << (_stack->isEmpty() ? "true" : "false") << std::endl;
                         break;
                     case 5:
                         running = false;
@@ -54,18 +54,20 @@
                 }
             } catch (StackOverflowException &e0) {
                 printExceptionMessage(e0);
-                std::cout << "Попытка переполнения стэка с размером - " << stack->getMaxSize() << std::endl;
+                std::cout << "Попытка переполнения стэка с размером - " << _stack->getMaxSize() << std::endl;
 
             } catch (StackUnderflowException &e1) {
                 printExceptionMessage(e1);
                 std::cout << "Попытка взять элемент из пустого стэка" << std::endl;
+
             } catch (std::exception &e2) {
                 printExceptionMessage(e2);
+
             }
         }
     }
 
-    StackInterface::~StackInterface() {
-        delete (stack);
+    StackUserInterface::~StackUserInterface() {
+        delete (_stack);
     }
 

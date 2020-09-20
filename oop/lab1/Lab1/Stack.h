@@ -3,13 +3,13 @@
 class Stack {
     int* _stackArray;
     int _maxSize;
-    int _size;
+    int _size = 0;
 public:
-    explicit Stack(int size);
+    Stack(int size);
     int pop();
     int back();
     void push(int element);
-    bool isEmpty() const;
-    int getMaxSize() const;
+    bool isEmpty();
+    int getMaxSize();
     ~Stack();
 };

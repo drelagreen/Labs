@@ -1,11 +1,12 @@
-#include "StackInterface.h"
+#include "StackUserInterface.h"
 #include <locale>
 #include <vld.h>
 int main(){
     setlocale(LC_ALL, "Russian");
-    auto* stackInterface = new StackInterface();
+    StackUserInterface* stackInterface = new StackUserInterface();
     stackInterface->start();
     delete (stackInterface);
     system("pause");
+    return 0;
 }
 

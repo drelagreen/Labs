@@ -1,12 +1,14 @@
 #pragma once
 #include <iostream>
+#include "Stack.h"
 
-class StackInterface{
+class StackUserInterface{
 private:
+    Stack* _stack;
     int getNextInt();
     int getStackSize();
     void printExceptionMessage(std::exception& e);
 public:
     void start();
-    ~StackInterface();
+    ~StackUserInterface();
 };
