@@ -1,6 +1,7 @@
 #pragma once
 
 class Stack {
+private:
     int* _stackArray;
     int _maxSize;
     int _size = 0;

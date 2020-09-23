@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="StackOverflowException">
+    <Position X="7" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MyExceptions.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StackUnderflowException">
+    <Position X="5.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MyExceptions.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Stack">
+    <Position X="3.25" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAAAAAAACAAAAIAAgAAAgAQAAAAIAAIAQAA=</HashCode>
+      <FileName>Stack.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StackUserInterface">
+    <Position X="0.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAABgAAAAAAARAAAAAACAAAAAAAAAABA=</HashCode>
+      <FileName>StackUserInterface.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_stack" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="std::exception" Collapsed="true">
+    <Position X="6" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAACAAAAAAAAAAAAAAAAAAEAAAAAkAAAAAAA=</HashCode>
+      <FileName>C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\vcruntime_exception.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
