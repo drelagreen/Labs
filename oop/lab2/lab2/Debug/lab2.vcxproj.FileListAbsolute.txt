@@ -1,0 +1,2 @@
+E:\SFEDU\labs\oop\lab2\lab2\Debug\lab2.exe
+E:\SFEDU\labs\oop\lab2\lab2\Debug\lab2.pdb

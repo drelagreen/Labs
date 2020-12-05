@@ -1,6 +1,5 @@
 #include "Stack.h"
 #include "MyExceptions.h"
-#include <string.h>
 	Stack::Stack(int size) {
 		_stackArray = new int[size];
 		_maxSize = size;

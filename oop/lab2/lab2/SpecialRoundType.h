@@ -1,0 +1,4 @@
+#pragma once
+enum SpecialRoundType {
+	INCREMENT, DECREMENT, NULL_INCREMENT, NULL_DECREMENT
+};
