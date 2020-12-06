@@ -1,5 +1,5 @@
 #include "Triad.h"
-
+#include "Exceptions.h"
 Triad::Triad(int maxA, int maxB, int maxC, int a, int b, int c) {
 	this->maxA = maxA;
 	this->maxB = maxB;
@@ -10,7 +10,7 @@ Triad::Triad(int maxA, int maxB, int maxC, int a, int b, int c) {
 		this->c = c;
 	}
 	else {
-		throw "debug 1";
+		throw TriadDataException();
 	}
 }
 

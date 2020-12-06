@@ -4,7 +4,7 @@
 #include "Memories.h"
 #include "Date.h"
 #include "Time.h"
-
+#include "Exceptions.h"
 
 Interaction::Interaction(Memories* memories) {
 
@@ -32,10 +32,6 @@ bool Interaction::menu2(int x) {
 		std::cout << "size: ";
 		int size;
 		size = scan();
-		if (size <= 0) {
-			std::cout << "Incorrect size!\n";
-			break;
-		}
 		if (memories) {
 			delete memories;
 		}
@@ -56,10 +52,6 @@ bool Interaction::menu2(int x) {
 			Pare* p = new Pare(date, time);
 			std::cout << "Index - ";
 			int index = scan();
-			if (index < 0 || index >= memories->getMaxSize()) {
-				std::cout << "Incorrect index!\n";
-				break;
-			}
 			memories->setPare(index, p);
 			std::cout << "\nSuccessful!\n";
 		}
@@ -78,8 +70,8 @@ bool Interaction::menu2(int x) {
 
 			std::cout << "Index > ";
 			index = scan();
-			if (index >= memories->getMaxSize() || index < 0 || !memories->getPare(index)) {
-				std::cout << "Incorrect index!\n";
+			if (!memories->getPare(index)) {
+				std::cout << "\nPare == NULL!\n";
 				break;
 			}
 			std::cout << "1 - Date, 2 - Time\n";
@@ -166,7 +158,15 @@ void Interaction::printData()
 void Interaction::start() {
 	while (runningFlag) {
 		menu1();
-		runningFlag = menu2(scan());
+		try {
+			runningFlag = menu2(scan());
+		}
+		catch (MemoriesException &e) {
+			std::cout << "/n" << e.what() << "\n";
+		}
+		catch (TriadDataException& e1) {
+			std::cout << "/n" << e1.what() << "\n";
+		}
 		std::cout << "\n";
 	}
 }
