@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Date">
+    <Position X="1" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAEAAACAEAAAAAAAAAAAAAAAABAAAAAAAAAAA=</HashCode>
+      <FileName>Date.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TriadDataException" Collapsed="true">
+    <Position X="5.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Exceptions.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MemoriesException" Collapsed="true">
+    <Position X="9" Y="3" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgCAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAA=</HashCode>
+      <FileName>Exceptions.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Interaction">
+    <Position X="11.75" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgAABAAAgACAAAAAAAAAAAIAAgAAUAAAEAAA=</HashCode>
+      <FileName>Interaction.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="memories" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Memories">
+    <Position X="7.25" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAAAgAAAAAAABAAAAECAEAAAAAAAIIAAAA=</HashCode>
+      <FileName>Memories.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="pareArray" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Pare">
+    <Position X="7.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAQACAABAIEAAAAAAAAACAAAAAAAAAAQAI=</HashCode>
+      <FileName>Pare.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="key" />
+      <Field Name="value" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Time">
+    <Position X="5.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAACAEAAAAAAAAAAAAAAAAAAAAAAAAAAQA=</HashCode>
+      <FileName>Time.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Triad">
+    <Position X="3.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AMABAAAAEAAIgAEAAAAAQAAQAAAAgACgBxAA4AAAAAA=</HashCode>
+      <FileName>Triad.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="SpecialRoundType">
+    <Position X="1" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAIAAAAAgAAAAAAAAAAAAAIAAAAAAABAA=</HashCode>
+      <FileName>SpecialRoundType.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="TriadNumber">
+    <Position X="1" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAgABAAAAAAAAAAAAAAAAAQAAAAA=</HashCode>
+      <FileName>TriadNumber.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -5,12 +5,11 @@ class Triad
 {
 public:
 	Triad(int maxA, int maxB, int maxC, int a, int b, int c);
-
 	int getAndIncrement(TriadNumber triadNumber);
 	int getAndDecrement(TriadNumber triadNumber);
 	int incrementAndGet(TriadNumber triadNumber);
 	int decrementAndGet(TriadNumber triadNumber);
-	int get(TriadNumber trieadNumber);
+	int get(TriadNumber triadNumber);
 	void clear();
 	bool isOverloaded();
 private:

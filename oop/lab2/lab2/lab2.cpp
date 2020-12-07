@@ -8,7 +8,6 @@
 
 int main()
 {
-
     Interaction* interaction = new Interaction();
     interaction->start();
     delete interaction;

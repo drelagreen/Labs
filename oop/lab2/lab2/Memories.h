@@ -5,7 +5,7 @@ class Memories {
 private:
 	Pare** pareArray;
 	int maxSize;
-	int size = 0;
+
 public:
 	Memories(int size);
 	Pare* getPare(int index);
