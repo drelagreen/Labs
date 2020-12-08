@@ -1,9 +1,2 @@
-﻿  Date.cpp
-  Interaction.cpp
-  Memories.cpp
-  Pare.cpp
-  Triad.cpp
-  lab2.cpp
-  Создание кода...
-E:\SFEDU\labs\oop\lab2\lab2\Triad.h(33): warning C4715: Triad::getInt: значение возвращается не при всех путях выполнения
+﻿  Interaction.cpp
   lab2.vcxproj -> E:\SFEDU\labs\oop\lab2\lab2\Debug\lab2.exe

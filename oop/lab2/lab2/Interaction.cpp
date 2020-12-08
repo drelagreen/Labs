@@ -5,6 +5,7 @@
 #include "Date.h"
 #include "Time.h"
 #include "Exceptions.h"
+#include "TriadFactory.h"
 
 Interaction::Interaction(Memories* memories) {
 
@@ -43,12 +44,20 @@ bool Interaction::menu2(int x) {
 			int a = scan();
 			int b = scan();
 			int c = scan();
-			Date* date = new Date(a,b,c);
+
+			//FACTORY METHOD 1
+			//Date* date = new Date(a,b,c);
+			Date* date = TriadFactory<Date>::getTriad(a, b, c);
+
+
 			std::cout << "Pare #1 (3 nums, Timme, HH-MM-SS) - ";
 			c = scan();
 			b = scan();
 			a = scan();
-			Time* time = new Time(a,b,c);
+
+			//FACTORY METHOD 2
+			//Time* time = new Time(a,b,c);
+			Time* time = TriadFactory<Time>::getTriad(a, b, c);
 			Pare* p = new Pare(date, time);
 			std::cout << "Index - ";
 			int index = scan();

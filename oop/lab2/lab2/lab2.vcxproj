@@ -157,6 +157,7 @@
     <ClInclude Include="Pare.h" />
     <ClInclude Include="Time.h" />
     <ClInclude Include="Triad.h" />
+    <ClInclude Include="TriadFactory.h" />
     <ClInclude Include="TriadNumber.h" />
   </ItemGroup>
   <ItemGroup>
