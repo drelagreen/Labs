@@ -55,7 +55,7 @@ bool Interaction::menu2(int x) {
 			b = scan();
 			a = scan();
 
-			//FACTORY METHOD 2
+			//FACTORY METHOD
 			//Time* time = new Time(a,b,c);
 			Time* time = TriadFactory<Time>::getTriad(a, b, c);
 			Pare* p = new Pare(date, time);
