@@ -7,7 +7,7 @@ Elections::Elections(std::string fullname, std::string birthDate, std::string wo
     this->rating = std::stod(rating);
 }
 
-double Elections::getRating() {
+double Elections::getRating() const {
     return rating;
 }
 

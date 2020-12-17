@@ -20,5 +20,5 @@ public:
 
     std::string getBirthDate();
 
-    double getRating();
+    double getRating() const;
 };
